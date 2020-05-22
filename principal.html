@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="phrase center">Lorem Ipsum dolor sit amet, consectetu adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="center">
+            <img src="img/spinner.gif" alt="Spinner" id="spinner">
+            <p id="erro">Ocorreu um erro, por favor tente novamente.</p>        
+        </div>
+
+        <ul class="information center">
+            <li>
+                <i class="small material-icons icons">description</i>
+                <span id="phrase-size">5</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icons">query_builder</i>
+                <span id="typing-time">10</span> segundos
+            </li>
+        </ul>
+    
+        <textarea class="typing-field" rows="8" cols="40"></textarea>
+        
+        <div class="buttons">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="restart-button"><i class="material-icons">restore</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green" id="score-button"><i class="material-icons">assignment</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light blue" id="change-phrase"><i class="material-icons">shuffle</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light cyan" id="phrase-id-button"><i class="material-icons">repeat_one</i></a>
+            <input type="number" id="phrase-id" min="0">
+
+            <div class="select-users">
+                <select name="" id="users">
+                    <option value="Douglas">Douglas</option>
+                    <option value="Ayrton">Ayrton</option>
+                    <option value="Flavio">Flavio</option>
+                </select>
+            </div>
+
+            <a class="tooltip btn-floating btn-large waves-effect waves-light yellow" id="sync-button" title="Sincronizado com sucesso!"><i class="material-icons">swap_vert</i></a>
+
+        </div>
+    
+        <ul class="center">
+            <li><span id="character-counter">0</span> caracteres</li>
+            <li><span id="word-counter">0</span> palavras</li>
+        </ul>
+
+        <section class="score">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de palavras</th>
+                        <th>Remover?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/phrase.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+    <!-- Seja bem vindo ao curso de jQuery :) -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+.phrase {
+    font-size: 20px;
+}
+
+#spinner {
+    display: none;
+}
+
+#erro {
+    display: none;
+    font-size: 1.5em;
+    color: red;
+}
+
+.icons {
+    vertical-align: middle;
+}
+
+.typing-field {
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+}
+
+.select-users {
+    display: inline-block;
+}
+
+#users {
+    display: block;
+}
+
+.selectize-input {
+    width: 150px;
+    vertical-align: middle;
+}
+
+#sync-button {
+    float: right;
+}
+
+#phrase-id {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    border: 1px dashed black;
+    vertical-align: middle;
+}
+
+.disabled-field {
+    background-color: lightgray;
+}
+
+.green-border {
+    border: 3px solid green;
+}
+
+.red-border {
+    border: 3px solid red;
+}
+
+.score {
+    display: none;
+}
+
+body {
+    overflow: scroll;
+}
